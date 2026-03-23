@@ -1,4 +1,3 @@
-// the following code is the encapulation of feature creep :3
 function getWindDirection(degree) {
     const directions = [
       'N', 'NNE', 'NE', 'ENE', 'E', 'ESE', 'SE', 'SSE',
@@ -11,7 +10,7 @@ function getWindDirection(degree) {
   import { useState } from "react";
 
   function WeatherCard({ city, weather }) {
-    const [isMetric, setIsMetric] = useState(true);
+    const [isMetric, setIsMetric] = useState(false);
     if (!weather) return null;
 
     const windDir = getWindDirection(weather.winddirection);
@@ -101,7 +100,10 @@ function getWindDirection(degree) {
           
         </div>
         <div style={{marginTop: 8}}>
-          <strong>Sunrise:</strong> {formatTime(weather.sunrise)} &nbsp; <strong>Sunset:</strong> {formatTime(weather.sunset)}
+          <strong>Sunrise:</strong> {formatTime(weather.sunrise)}
+        </div>
+        <div style={{marginTop: 8}}>
+          <strong>Sunset:</strong> {formatTime(weather.sunset)}
         </div>
         <p style={{marginTop: 8}}>Wind: {isMetric ? windMetric : windImperial} 
           <span style={arrowStyle}>↑</span>

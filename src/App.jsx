@@ -45,8 +45,10 @@ const styles = {
     justifyContent: "space-between",
     alignItems: "center",
     padding: "15px 25px",
-    background: "#0f172a",
-    color: "white"
+    background: "#0113427",
+    color: "white",
+    marginLeft:"15%",
+    marginRight:"15%"
   },
   link: {
     color: "white",

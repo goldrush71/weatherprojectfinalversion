@@ -17,7 +17,7 @@ function Home() {
       collection(db, "users", user.uid, "locations")
     );
 
-    const loadedLocations = snapshot.docs.map(doc => ({
+    const loadedLocations = snapshot.docs.map(doc => ({ 
       id: doc.id,
       ...doc.data()
     }));
@@ -74,7 +74,7 @@ function Home() {
     <div style={{ textAlign: "center", marginTop: "40px" }}>
       {weather && <WeatherCard city={city} weather={weather} />}
       <div className="saved-cities">
-        <h2>Saved Cities</h2>
+        <h2><i>Locations</i></h2>
         {locations.length === 0 && <p>No saved locations yet.</p>}
         {locations.map(location => (
           <div
@@ -85,6 +85,8 @@ function Home() {
               padding: "15px",
               borderRadius: "10px",
               marginBottom: "10px",
+              marginLeft:"35%",
+              marginRight:"35%",
               display: "flex",
               justifyContent: "space-between"
             }}

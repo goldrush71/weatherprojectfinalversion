@@ -10,7 +10,7 @@ body {
 
 /* center content */
 .container {
-  display: flex;
+  display: flex;  
   flex-direction: column;
   align-items: center;
   padding: 20px;
@@ -39,7 +39,7 @@ button {
 }
 
 button:hover {
-  background: #0ee983;
+  background: #57eca6;
 }
 
 /* responsive card */
@@ -51,7 +51,7 @@ button:hover {
 /* responsive nav */
 .nav-links {
   display: flex;
-  gap: 15px;
+  gap: 15px;  
 }
 
 /* mobile nav */

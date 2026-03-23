@@ -17,7 +17,6 @@ function Login() {
 
   return (
     <div style={{ textAlign: "center", marginTop: "60px" }}>
-      <h2>Welcome — Log In or Sign Up</h2>
 
       <input
         style={{ margin: "10px", padding: "8px", width: "200px" }}
